@@ -1,63 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-.pricing {
-width: 300px;
-margin: auto;
-background-color: #fff;
-box-shdow: 0 0 10px #ccc;
-padding: 10px;
-text-align: left;
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basic Plan — Pricing</title>
+    <link rel="stylesheet" href="pricing-page.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Pricing</h1>
+    </header>
 
-.title {
-font-size: 22px;
-font-weight: bold;
-}
+    <main class="site-main">
+      <article class="pricing" data-pricing-card>
+        <h2 class="title">Basic Plan</h2>
+        <p class="price">$9.99 / month</p>
 
-.price {
-font-size: 18px;
-color: green;
-}
+        <ul class="features">
+          <li>1 GB Storage</li>
+          <li>Basic Support</li>
+          <li>All Core Features</li>
+        </ul>
 
-.features {
-list-style: none;
-padding-left: 0;
-}
+        <button type="button" class="btn" data-trial-button>Start Trial</button>
+        <p
+          class="trial-message"
+          id="trial-message"
+          hidden
+          role="status"
+          aria-live="polite"
+        ></p>
+      </article>
+    </main>
 
-.features li {
-padding: 4px;
-border-bottom: 1px solid #eee;
-}
+    <footer class="site-footer">
+      <p>© <span data-year></span> Your Company</p>
+    </footer>
 
-.btn {
-background: blue;
-color: white;
-padding: 10px 20px;
-border: none;
-margin-top: 10px;
-}
-
-.btn:hover {
-background: darkblue;
-}
-</style>
-</head>
-<body>
-
-<div class="pricing">
-<h2 class="title">Basic Plan<h2>
-<p class="price">$9.99 /month</p>
-
-<ul class="features">
-<li>1 GB Storage</li>
-<li>Basic Support</li>
-<li>All Core Features</li>
-</ul>
-
-<button class="btn">Start Trial</button>
-</div>
-
-</body>
+    <script src="pricing-page.js" defer></script>
+  </body>
 </html>
